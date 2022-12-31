@@ -1,3 +1,115 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* :root {
+  --swiper-theme-color: #4f46e5 !important;
+ } */
+
+ 
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ @layer base {
+   mark {
+     @apply bg-gray-200 px-1 py-0.5 rounded;
+   }
+   
+   /* ... */
+ }
+ 
+ @layer components {
+   .btn-primary {
+     @apply inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-500;
+   }
+   .btn-default {
+     @apply inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-500;
+   }
+   .label-form {
+     @apply block text-sm font-medium text-gray-700;
+   }
+   .input-form {
+     @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm;
+   }
+   .group-button-form {
+     @apply bg-gray-100 flex flex-row-reverse p-4 gap-3 items-end;
+   }
+   
+ 
+   .colored-toast.swal2-icon-success {
+     background-color: #a5dc86 !important ;
+   }
+ 
+   .colored-toast.swal2-icon-error {
+     background-color: #f27474 !important;
+   }
+   
+   .colored-toast.swal2-icon-warning {
+     background-color: #f8bb86 !important;
+   }
+   
+   .colored-toast.swal2-icon-info {
+     background-color: #3fc3ee !important;
+   }
+   
+   .colored-toast.swal2-icon-question {
+     background-color: #87adbd !important;
+   }
+   
+   .colored-toast .swal2-title {
+     color: white;
+   }
+   
+   .colored-toast .swal2-close {
+     color: white;
+   }
+   
+   .colored-toast .swal2-html-container {
+     color: white;
+   }
+   .my-validation-message::before {
+     display: none;
+   }
+   
+   .my-validation-message i {
+     margin: 0 .4em;
+     color: #f27474;
+     font-size: 1.4em;
+   }
+ 
+   .swiper {
+     width: 100%;
+     height: 100%;
+   }
+   .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+   
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+   }
+   
+   .swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+
+   .remove-bg {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+   }
+ }
